@@ -1,0 +1,23 @@
+# Build artifacts
+/target/
+**/*.rs.bk
+
+# Cargo lock file (uncomment if building a library)
+# Cargo.lock
+
+# Environment variables
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
