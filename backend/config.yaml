@@ -1,0 +1,35 @@
+server:
+  port: 3000
+  host: "0.0.0.0"
+  read_timeout: 15s
+  write_timeout: 15s
+  idle_timeout: 60s
+
+openrouter:
+  base_url: "https://openrouter.ai/api/v1"
+  timeout: 60s
+
+models:
+  categorizer: "openai/gpt-oss-20b:free"
+  easy: "meta-llama/llama-3.3-8b-instruct:free"
+  advanced: "openai/gpt-oss-20b:free"
+  coding: "qwen/qwen-2.5-coder-32b-instruct:free"
+  image: "qwen/qwen2.5-vl-32b-instruct:free"
+  image_hard: "nvidia/nemotron-nano-12b-v2-vl:free"
+
+categorization:
+  prompt: |
+    Categorize the following user request into EXACTLY ONE of these categories: easy, advanced, or coding.
+    
+    EASY: Simple, quick questions that require basic knowledge or calculations.
+    Examples: "What's 2+2?", "Convert 5kg to pounds", "What's the capital of France?"
+    
+    ADVANCED: Complex questions requiring deep reasoning, analysis, or nuanced understanding.
+    Examples: "Explain quantum entanglement", "What are the ethical implications of AI?", "Analyze this business problem"
+    
+    CODING: Any programming-related questions, code generation, debugging, or technical implementation.
+    Examples: "How to iterate in Go?", "Debug this Python code", "Explain Rust macros"
+    
+    Respond with ONLY ONE WORD: easy, advanced, or coding
+    
+    User request: {content}
