@@ -11,7 +11,7 @@ openrouter:
 
 models:
   categorizer: "openai/gpt-oss-20b:free"
-  easy: "meta-llama/llama-3.3-8b-instruct:free"
+  easy: "z-ai/glm-4.5-air:free"
   advanced: "openai/gpt-oss-20b:free"
   coding: "qwen/qwen-2.5-coder-32b-instruct:free"
   image: "qwen/qwen2.5-vl-32b-instruct:free"
