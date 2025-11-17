@@ -10,12 +10,12 @@ openrouter:
   timeout: 60s
 
 models:
-  categorizer: "openai/gpt-oss-20b:free"
-  easy: "cognitivecomputations/dolphin-mistral-24b-venice-edition:free"
-  advanced: "openai/gpt-oss-20b:free"
-  coding: "qwen/qwen-2.5-coder-32b-instruct:free"
-  image: "qwen/qwen2.5-vl-32b-instruct:free"
-  image_hard: "nvidia/nemotron-nano-12b-v2-vl:free"
+  categorizer: "openai/gpt-oss-20b"
+  easy: "google/gemma-3n-e4b-it"
+  advanced: "openai/gpt-oss-20b"
+  coding: "qwen/qwen-2.5-coder-32b-instruct"
+  image: "qwen/qwen2.5-vl-32b-instruct"
+  image_hard: "nvidia/nemotron-nano-12b-v2-vl"
 
 categorization:
   prompt: |

@@ -26,12 +26,12 @@ func getTestConfig(t *testing.T) *config.Config {
 			Timeout: 60 * time.Second,
 		},
 		Models: config.ModelsConfig{
-			Categorizer: "openai/gpt-oss-20b:free",
-			Easy:        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-			Advanced:    "openai/gpt-oss-20b:free",
-			Coding:      "qwen/qwen-2.5-coder-32b-instruct:free",
-			Image:       "qwen/qwen2.5-vl-32b-instruct:free",
-			ImageHard:   "nvidia/nemotron-nano-12b-v2-vl:free",
+			Categorizer: "openai/gpt-oss-20b",
+			Easy:        "google/gemma-3n-e4b-it",
+			Advanced:    "openai/gpt-oss-20b",
+			Coding:      "qwen/qwen-2.5-coder-32b-instruct",
+			Image:       "qwen/qwen2.5-vl-32b-instruct",
+			ImageHard:   "nvidia/nemotron-nano-12b-v2-vl",
 		},
 	}
 }
