@@ -27,7 +27,7 @@ func getTestConfig(t *testing.T) *config.Config {
 		},
 		Models: config.ModelsConfig{
 			Categorizer: "openai/gpt-oss-20b:free",
-			Easy:        "z-ai/glm-4.5-air:free",
+			Easy:        "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
 			Advanced:    "openai/gpt-oss-20b:free",
 			Coding:      "qwen/qwen-2.5-coder-32b-instruct:free",
 			Image:       "qwen/qwen2.5-vl-32b-instruct:free",
